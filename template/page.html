@@ -1,0 +1,26 @@
+<center>
+
+<h2>the page was shown in the page 
+    <BR>
+        
+        
+        <div>
+          
+          
+            <form action="nn" method="POST">
+            {% csrf_token %}    
+                <br>
+                <input type="number" name="num1" autocomplete="off" value="0"><br><br>
+                <input type="number" name="num2" autocomplete="off" value="0"><br><br>
+                <input type="submit" value="+" name="butt">
+                <input type="submit" value="/" name="butt">
+                <input type="submit" value="-" name="butt">
+
+                <br>
+                <br>
+                <h3>sum : {{sum}}</h3>
+             
+            </h2></form>
+           
+        </div> 
+</center>          

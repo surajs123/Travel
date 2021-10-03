@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form </title>
+</head>
+<body bgcolor="cyan">
+    <center>
+        <form action="register" method="POST" autocomplete="off">
+            {% csrf_token%}
+            <br><br><br><br><br><br>
+            <input type="text" name="username" placeholder="Username" autocomplete="off"><br><br>
+            <input type="text" name="first_name" placeholder="First name"><br><br>
+            <input type="text" name="last_name" placeholder="Last name"><br><br>
+            <input type="text" name="email" placeholder="Email"><br><br>
+            <input type="password" name="password" placeholder="password" autocomplete='off'><br><br>
+            <input type="password" name="password1" placeholder="password1" autocomplete="OFF"><br><br><br>
+            <label>staff :</label><input type="checkbox" name="is_staff"><br><br>
+            <input type="submit" value="SUBMITE" ><br><br>
+
+
+            
+        </form>
+
+        <h2>{{massage}}</h2>
+    </center>
+    
+    
+    
+</body>
+</html>
